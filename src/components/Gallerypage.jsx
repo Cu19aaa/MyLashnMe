@@ -14,12 +14,14 @@ import gallery9 from "../assets/gallery9.png";
 import gallery10 from "../assets/gallery10.png";
 import gallery11 from "../assets/gallery11.png";
 import gallery12 from "../assets/gallery12.png";
-import gallery13 from "../assets/gallery13.png";
+import gallery14 from "../assets/gallery14.png";
+import gallery15 from "../assets/gallery15.png";
+import gallery17 from "../assets/gallery17.png";
 
 const GalleryPage = () => {
   const images = [
     gallery, gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7,
-    gallery8, gallery9, gallery10, gallery11, gallery12, gallery13,
+    gallery8, gallery9, gallery10, gallery11, gallery12,gallery14,gallery15, gallery17,
   ];
 
   const [isModalOpen, setIsModalOpen] = useState(false);
