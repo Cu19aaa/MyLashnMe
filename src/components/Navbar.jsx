@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from '../assets/logo.png';
+import Logo from '../assets/updated-logo.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link as ScrollLink } from 'react-scroll'; // Alias as ScrollLink to avoid conflict with React Router Link
 import { Link } from 'react-router-dom';
@@ -35,7 +35,7 @@ const Navbar = () => {
         </li>
         <li className='mx-4 cursor-pointer'>
           <a href="https://app.acuityscheduling.com/schedule.php?owner=21251692" target="_blank" rel="noopener noreferrer">
-            Make a Booking
+            Book an Appointment
           </a>
         </li>
         <li className='mx-4 cursor-pointer'>
@@ -82,7 +82,7 @@ const Navbar = () => {
 
         <li className='py-6 text-4xl'>
           <a href="https://app.acuityscheduling.com/schedule.php?owner=21251692" target="_blank" rel="noopener noreferrer">
-            Make a Booking
+            Book an Appointment
           </a>
         </li>
 
