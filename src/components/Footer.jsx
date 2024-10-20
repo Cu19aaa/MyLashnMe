@@ -1,6 +1,6 @@
 import React from 'react'
-import {FaFacebook, FaInstagram, FaTwitter} from 'react-icons/fa'
-import {TiSocialPinterest} from 'react-icons/ti'
+import {FaInstagram} from 'react-icons/fa'
+import { FaTiktok } from "react-icons/fa";
 
 
 const Footer = () => {
@@ -11,10 +11,10 @@ const Footer = () => {
         <div className='col-span-2 py-8 md:pt-2'>
             <p className='font-bold uppercase'>Join my Mailing List</p>
             <p className='py-4'>To get latest updates on class discounts</p>
-            <form  method='POST' action="https://getform.io/f/oeEJ3va0"
+            <form  method='POST' action="https://getform.io/f/aejyqlvb"
             className='flex flex-col sm:flex-row'>
                 <input className='w-full p-2 mr-4 rounded-md mb-4' type="email" placeholder='Enter Email'/>
-                <button className=' text-white border-2 border-white hover:bg-orange-600 hover:border-black hover:text-black hover:border-grey-600 p-2 mb-4 rounded-md'>Subscribe</button>
+                <button className=' text-white border-2 border-white hover:bg-[#E6C2BF] hover:border-black hover:text-black hover:border-grey-600 p-2 mb-4 rounded-md'>Subscribe</button>
                 {/*<button className='rounded-lg text-black border-2 border-black hover:bg-black hover:text-white hover:border-gray-300 px-4 py-3 my-8 mx-auto flex items-center'>Lets Collaborate</button>*/}
 
             </form>
@@ -22,11 +22,10 @@ const Footer = () => {
       </div>
 
       <div className='flex flex-col max-w-[1400px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-gray-500'>
-        <p className='py-4'>MyLashnMe, LLC. All Right Reserved. Developed by David Devs.</p>
+        <p className='py-4'>MyLashnMe, LLC. All Right Reserved. Developed by Dev-by-David.</p>
         <div className='flex justify-between sm:w-[300px] pt-4 text-2xl'>
-            <a href=""> <FaFacebook /> </a>
             <a href="https://www.instagram.com/mylashnme/" target="_blank"> <FaInstagram/> </a>
-            <a href=""> <FaTwitter/> </a>
+            <a href="https://www.tiktok.com/@mylashnme" target="_blank"> <FaTiktok /> </a>
         </div>
       </div>
     </div>
