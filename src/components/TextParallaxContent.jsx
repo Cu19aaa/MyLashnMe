@@ -10,6 +10,7 @@ import client3 from "../assets/client3.png";
 import client4 from "../assets/client4.png";
 import client5 from "../assets/client5.png";
 import client6 from "../assets/client6.png";
+import review from "../assets/review.png";
 import training from "../assets/TrainingCourse.png";
 import ClientCam from "../assets/ClientCam.png";
 import testimonials from "../assets/Testimonials.png";
@@ -206,45 +207,77 @@ const OverlayCopy = ({ heading, subheading }) => {
 );
 
 
-
 const TestimonialData = [
   {
-    id:1,
-        name:"Client Name",
-        text: "lorenm ipsum random good working s in Jesus Name. Success be it",
-        img:services,
+    id: 1,
+    img: review, // Replace with actual image path
+    text: "I absolutely adore my strip lashes from MylashnMee Kustom Kollection. No matter how crazy the request, she always gets it on point. I literally look like I got my lashes done. Will definitely be stocking up 💞",
+    name: "Fauzia"
   },
   {
-    id:2,
-        name:"Client Name",
-        text: "lorem ipsum random good working s in Jesus Name. Success be it",
-        img:services,
+    id: 2,
+    img: review, // Replace with actual image path
+    text: "I’ve been coming to My Lash N’ Me for a couple of years now and for someone who is very particular about what they want, I am always pleased with the outcome . I think my favourite part of the service is the RETENTION. They always last longer than any sets I’ve had in the past. Would 100% recommend.",
+    name: "Daizy"
   },
   {
-    id:3,
-        name:"Client Name",
-        text: "lorem ipsum random good working s in Jesus Name. Success be it",
-        img:services,
+    id: 3,
+    img: review, // Replace with actual image path
+    text: "I’ve been so happy with the sets I’ve done with My Lash N’ Me. I think for me, it was the overall experience and environment that made me enjoy my lash appointments that much more. I’ve had so many girls compliment the lashes and asking me where I get them done. I will always vouch for MLNM ! 💕",
+    name: "Eleanor"
   },
   {
-    id:4,
-        name:"Client Name",
-        text: "lorem ipsum random good working s in Jesus Name. Success be it",
-        img:services,
+    id: 4,
+    img: review, // Replace with actual image path
+    text: "My Lash N’ Me was my first lash extension experience, and I’m so glad that I did. The lashes turned out so much nicer than I even expected, because she knew just how to cater the set I asked for to my eye shape. I loooove them and will definitely be back!!!",
+    name: "Lona"
   },
   {
-    id:5,
-        name:"Client Name",
-        text: "lorem ipsum random good working s in Jesus Name. Success be it",
-        img:services,
+    id: 5,
+    img: review, // Replace with actual image path
+    text: "Best LASH tech ever. I'll travel miles just to use her services 🥰😍",
+    name: "Drusilla"
+  }, 
+  {
+    id: 6,
+    img: review, // Replace with actual image path
+    text: "10 out of 10 set, very reusable. The strip lashes mimics actual lash extensions. Fits your eye shape perfectly and gives you that lash babe look.",
+    name: "Abi"
+  }, 
+  {
+    id: 7,
+    img: review, // Replace with actual image path
+    text: "Honestly nothing compares to MyLashnme!!!! I used to travel long distances just to get my lashes done. The MLNM was then based in my area and I was so excited. The best lash tech is now near me!",
+    name: "Julianna"
+  }, 
+  {
+    id: 8,
+    img: review, // Replace with actual image path
+    text: "I’ve been doing my lashes with MLNM since I was in uni and not a single set has ever disappointed! And the retention is always good. The whole service is just smooth from start to finish and the setting is just so comfortable (hence why I’m always sleeping and snoring lol). There is always a song to Shazam or a word of wisdom to catch. Cannot wait to get my next set done!!",
+    name: "Joy"
+  }, 
+  {
+    id: 9,
+    img: review, // Replace with actual image path
+    text: "I loved booking with Mylashnme, I don’t usually get my lashes done so this was new to me. But I loved every part of my appointment. I only had to explain the style I wanted once and it was EXECUTED! My lashes were amazing and lasted my whole holiday. The CEO is very welcoming and Kind I would definitely RECOMMEND!!!🤍🤍",
+    name: "Alexie"
+  }, 
+  {
+    id: 10,
+    img: review, // Replace with actual image path
+    text: "Best in the game!!! My Good sis slays every time, and always has time for me even if I book last minute. She took my lash virginity and she is the only one I trust to come anywhere close to my eyes. Sis I’ll see you in 2weeks for my infills ☺️❤️🤗",
+    name: "Enjoyin"
   },
   {
-    id:6,
-        name:"Client Name",
-        text: "lorem ipsum random good working s in Jesus Name. Success be it",
-        img:services,
-  },
+    id: 11,
+    img: review, // Replace with actual image path
+    text: "The first time is used My Lash N’ Me services was in 2022 when I just moved to uk, and I can honestly say no one gets my lashes like you do. The best lash retention I’ve ever experienced. She’s quick and still provides a great service in the process, I love it!",
+    name: "Eva"
+  }, 
+  
 ];
+
+
 
 
  const ExampleContent3 = () => {
@@ -276,11 +309,11 @@ const TestimonialData = [
 
          </motion.div>
  
-         <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-4">
+         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
            {/* Grid Item 1 */}
            <motion.div
              style={{ backgroundImage: `url(${client1})` }}
-             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div h-96 bg-cover bg-center"
+             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div h-96 bg-cover bg-center aspect-square"
              whileHover={{ scale: 1.05 }}
            >
              <div className='opacity-0 group-hover:opacity-100'></div>
@@ -289,7 +322,7 @@ const TestimonialData = [
            {/* Grid Item 2 */}
            <motion.div
              style={{ backgroundImage: `url(${client2})` }}
-             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div h-96 bg-cover bg-center"
+             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div h-96 bg-cover bg-center aspect-square"
              whileHover={{ scale: 1.05 }}
            >
              <div className='opacity-0 group-hover:opacity-100'></div>
@@ -298,7 +331,7 @@ const TestimonialData = [
            {/* Grid Item 3 */}
            <motion.div
              style={{ backgroundImage: `url(${client3})` }}
-             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div h-96 bg-cover bg-center"
+             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div h-96 bg-cover bg-center aspect-square"
              whileHover={{ scale: 1.05 }}
            >
              <div className='opacity-0 group-hover:opacity-100'></div>
@@ -307,7 +340,7 @@ const TestimonialData = [
            {/* Grid Item 4 */}
            <motion.div
              style={{ backgroundImage: `url(${client4})` }}
-             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div h-96 bg-cover bg-center"
+             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div h-96 bg-cover bg-center aspect-square"
              whileHover={{ scale: 1.05 }}
            >
              <div className='opacity-0 group-hover:opacity-100'></div>
@@ -316,7 +349,7 @@ const TestimonialData = [
            {/* Grid Item 5 */}
            <motion.div
              style={{ backgroundImage: `url(${client5})` }}
-             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div h-96 bg-cover bg-center"
+             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div h-96 bg-cover bg-center aspect-square"
              whileHover={{ scale: 1.05 }}
            >
              <div className='opacity-0 group-hover:opacity-100'></div>
@@ -325,7 +358,7 @@ const TestimonialData = [
            {/* Grid Item 6 */}
            <motion.div
              style={{ backgroundImage: `url(${client6})` }}
-             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div h-96 bg-cover bg-center"
+             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div h-96 bg-cover bg-center aspect-square"
              whileHover={{ scale: 1.05 }}
            >
              <div className='opacity-0 group-hover:opacity-100'></div>
@@ -394,62 +427,7 @@ const TestimonialData = [
     ],
 };
 
-const TestimonialData = [
-  {
-    id: 1,
-    img: 'path/to/image1.jpg', // Replace with actual image path
-    text: "Absolutely in love with my lashes! The attention to detail and care taken during my appointment was top-notch. I felt comfortable and relaxed the entire time. Can't wait for my next appointment! 💖",
-    name: "Aaliyah M"
-  },
-  {
-    id: 2,
-    img: 'path/to/image2.jpg', // Replace with actual image path
-    text: "Best lash experience I've ever had! The studio is so chic and welcoming. She listened to exactly what I wanted and my lashes look so natural yet glamorous. 10/10 recommend to all my girls!",
-    name: "Chantelle B"
-  },
-  {
-    id: 3,
-    img: 'path/to/image3.jpg', // Replace with actual image path
-    text: "From start to finish, my appointment was flawless. The technician is so skilled and really knows her stuff. My lashes have never looked better. I'm definitely coming back for more!",
-    name: "Sasha P"
-  },
-  {
-    id: 4,
-    img: 'path/to/image4.jpg', // Replace with actual image path
-    text: "MLNM London’s strip lashes are a lifesaver! They look just like extensions but are so much easier to apply and maintain. Perfect for when I need a break from extensions but still want to look glam.",
-    name: "Tiana K"
-  },
-  {
-    id: 5,
-    img: 'path/to/image5.jpg', // Replace with actual image path
-    text: "The lash extensions I got at MLNM London are the best I’ve ever had. They look natural, feel light, and last for weeks. The team is professional and friendly, making the whole experience enjoyable.",
-    name: "Natasha"
-  }, 
-  {
-    id: 6,
-    img: 'path/to/image5.jpg', // Replace with actual image path
-    text: "Such a professional and friendly service! My lashes are absolutely stunning, and I've gotten so many compliments. If you're looking for the best lash tech in town, look no further!",
-    name: "Precious"
-  }, 
-  {
-    id: 7,
-    img: 'path/to/image5.jpg', // Replace with actual image path
-    text: "Had the most amazing lash appointment today. The atmosphere was so relaxing and the results are incredible. My lashes look full and beautiful without feeling heavy. Thank you so much!",
-    name: "Leila S."
-  }, 
-  {
-    id: 8,
-    img: 'path/to/image5.jpg', // Replace with actual image path
-    text: "I've tried a few places, but this one is hands down the best. My lashes are exactly how I envisioned them. The technician is a true artist, and I'm so happy with my look. Will be back for sure!",
-    name: "Zara J."
-  }, 
-  {
-    id: 9,
-    img: 'path/to/image5.jpg', // Replace with actual image path
-    text: "Love, love, love my new lashes! The service was impeccable and the technician was so lovely and attentive. My lashes look fabulous and I'm feeling extra confident. Highly recommend!",
-    name: "Renee A."
-  }, 
-];
+
 
   return (
     <div ref={inViewRef} className="py-10 mb-10 flex justify-center items-center">
@@ -481,7 +459,7 @@ const TestimonialData = [
                             <div className='flex flex-col items-center gap-4'>
                                 <div className='space-y-3'>
                                     <p className='text-xs text-white'>{data.text}</p>
-                                    <h1 className='text-xl font-bold text-orange-400 dark:text-light'>{data.name}</h1>
+                                    <h1 className='text-xl font-bold text-[#E6C2BF] dark:text-light'>{data.name}</h1>
                                 </div>
                             </div>
                             <p className='text-black/20 text-9xl font-serif absolute top-0 right-0'>,,</p>
@@ -505,103 +483,3 @@ const TestimonialData = [
 export default TextParallaxContentExample;
 
 
-{/*"const TextParallaxContentExample = () => {
-    return (
-        <div className="bg-white">
-            <TextParallaxContent 
-                imgUrl={services}
-                subheading="Our Services"
-                heading="Lash Extension | Strip Lashes | Lash Training Course"
-            >
-               <ExampleContent2/>
-            </TextParallaxContent>
-
-            <TextParallaxContent
-                imgUrl={gallery}
-                heading="POV: MLNM Clients"
-
-            >
-               <ExampleContent3/>
-            </TextParallaxContent>
-
-            <TextParallaxContent
-                imgUrl={testimonials}
-                heading="The MLNM Experience: live Testimonials"
-            >
-               <ExampleContent4/>
-            </TextParallaxContent>
-        </div>
-    );
-};
-
-const IMG_PADDING = 12;
-
-const TextParallaxContent = ({ imgUrl, subheading, heading, children }) => {
-    return (
-        <div
-        style={{
-         paddingLeft: IMG_PADDING,
-         paddingRight: IMG_PADDING,
-        }}
-        >
-            <div className="relative h-[150vh]">
-               <StickyImage imgUrl={imgUrl}/>
-               <OverlayCopy subheading={subheading} heading={heading}/>   
-                
-            </div>
-            {children}
-        </div>
-    );
-};
-
-const StickyImage = ({imgUrl}) => {
-   const targetRef = useRef(null);
-      const {scrollYProgress} = useScroll ({
-         target: targetRef,
-         offset: ["end end", "end start"]
-      });
-
-      const scale = useTransform(scrollYProgress, [0,1], [1,0.85]);
-      const opacity = useTransform(scrollYProgress, [0,1], [1,0]);
-
-   return (
-      <motion.div
-      style={{
-         backgroundImage: url(${imgUrl}),
-         backgroundSize: "cover",
-         backgroundPosition: "center",
-         height: calc(100vh - ${IMG_PADDING * 2}px),
-         top: IMG_PADDING,
-         scale,
-      }}
-      ref={targetRef}
-      className="sticky z-0 overflow-hidden rounded-3xl">
-         <motion.div 
-         style={{opacity,
-         }}
-
-         className="absolute inset-0 bg-neutral-950/70"
-         />
-      </motion.div>
-   )
-};
-
-const OverlayCopy = ({heading, subheading}) => {
-   const targetRef = useRef(null);
-      const {scrollYProgress} = useScroll ({
-         target: targetRef,
-         offset: ["start end", "end start"]
-      });
-      
-
-   return <motion.div
-   ref={targetRef}
-        name='services' className="absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center text-white"
-   
-   >
-      <p className="mb-2 text-center text-xl md:mb-4 md:text-3xl">{subheading}</p>
-
-      <p className="text-center text-4xl font-bold md:text-7xl">{heading}</p>
-
-   </motion.div>
-}"*/}
