@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import mylash1 from '../assets/dash1.png';
-import mylash2 from '../assets/dash2.png';
-import mylash3 from '../assets/mylash3.png';
+import mylash1 from '../assets/Hero1.png';
+import mylash2 from '../assets/Hero2.png';
+import mylash3 from '../assets/Hero3.png';
+import mylash4 from '../assets/dash1.png';
+import mylash5 from '../assets/dash2.png';
+import mylash6 from '../assets/dash3.png';
 
 const Hero = () => {
     const [backgroundImages, setBackgroundImages] = useState([mylash1, mylash2, mylash3]);
@@ -11,6 +14,26 @@ const Hero = () => {
     const nextImage = () => {
         setCurrentImageIndex((currentImageIndex + 1) % backgroundImages.length);
     };
+
+    // Use useEffect to update background images based on screen size
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth <= 768) {
+                // Use smaller screen images
+                setBackgroundImages([mylash4, mylash5, mylash6]);
+            } else {
+                // Use larger screen images
+                setBackgroundImages([mylash1, mylash2, mylash3]);
+            }
+        };
+
+        // Call handleResize on initial load and add a resize event listener
+        handleResize();
+        window.addEventListener('resize', handleResize);
+
+        // Cleanup the event listener on component unmount
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     // Use useEffect to set up an interval that switches images
     useEffect(() => {
@@ -24,7 +47,7 @@ const Hero = () => {
             {backgroundImages.map((image, index) => (
                 <img
                     key={index}
-                    className={`absolute top-0 left-0 w-full h-screen object-cover transition-opacity duration-1000 ease-in-out ${
+                    className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
                         index === currentImageIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
                     }`}
                     src={image}
@@ -34,13 +57,12 @@ const Hero = () => {
             ))}
 
             {/* Overlay */}
-            <div className='bg-black/20 absolute top-0 left-0 w-full h-screen' />
+            <div className='bg-black/20 absolute top-0 left-0 w-full h-full' />
 
             {/* Text and button overlay */}
-            <div className='absolute top-0 w-full h-full flex flex-col justify-center text-white'>
-                
+            <div className='absolute top-0 w-full h-full flex flex-col justify-center text-white px-4 md:px-10'>
+                {/* You can add your text here */}
             </div>
-
         </div>
     );
 };
